@@ -25,7 +25,7 @@ function sendEmailConfirmationHTML(customerName, orderNro){
 function getMessage(emailParams){
   return{
     to:emailParams.toEmail,
-    from: 'manuelg.patinoc@autonoma.edu.co',
+    from: 'luis.riosa@autonoma.edu.co',
     subject: 'Confirmación orden de compra BLACKFRIDAY',
     text: `Hola ${emailParams.customerName}, te enviamos las imágenes de los productos comprados y la factura con número ${emailParams.orderNro}, Gracias por tu compra`,
     html: sendEmailConfirmationHTML(emailParams.customerName, emailParams.orderNro)
